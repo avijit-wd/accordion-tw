@@ -9,7 +9,7 @@
 
 **A beautiful, responsive FAQ accordion component built with React, Vite, and Tailwind CSS v4**
 
-[🚀 Live Demo](#) • [📖 Documentation](#features) • [🛠️ Installation](#installation) • [💡 Usage](#usage)
+[🚀 Live Demo](https://accordion-tw.vercel.app/) • [📖 Documentation](#features) • [🛠️ Installation](#installation) • [💡 Usage](#usage)
 
 </div>
 
@@ -18,12 +18,14 @@
 ## ✨ Features
 
 🎯 **Modern Tech Stack**
+
 - ⚛️ React 19.1.1 with Hooks
 - ⚡ Vite 7.1.6 for lightning-fast development
 - 🎨 Tailwind CSS v4 with utility-first approach
 - 📱 Fully responsive design
 
 🌟 **Advanced UI/UX**
+
 - 🌙 Dark mode support with smooth transitions
 - 🎭 Beautiful gradient animations
 - 📱 Mobile-first responsive design
@@ -31,6 +33,7 @@
 - 🎪 Smooth expand/collapse animations
 
 🔧 **Developer Experience**
+
 - 📦 ESLint configuration
 - 💅 Prettier formatting
 - 🔥 Hot Module Replacement (HMR)
@@ -41,6 +44,7 @@
 ## 🖼️ Screenshots
 
 ### Light Mode
+
 ```
 ┌─────────────────────────────────────────┐
 │              FAQ Center                 │
@@ -55,6 +59,7 @@
 ```
 
 ### Dark Mode
+
 ```
 ┌─────────────────────────────────────────┐
 │              FAQ Center                 │
@@ -80,12 +85,14 @@
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/avijit-wd/accordion-tw.git
    cd accordion-tw
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -93,6 +100,7 @@
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    # or
@@ -134,7 +142,7 @@ accordion-tw/
 ### Basic Implementation
 
 ```jsx
-import FAQList from './components/FAQList';
+import FAQList from "./components/FAQList";
 
 function App() {
   return (
@@ -154,7 +162,7 @@ const faqData = [
   {
     id: 1,
     question: "Your custom question?",
-    answer: "Your detailed answer here..."
+    answer: "Your detailed answer here...",
   },
   // Add more FAQ items...
 ];
@@ -175,12 +183,12 @@ The project uses Tailwind CSS v4. You can customize:
 
 ## 🛠️ Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Build for production     |
 | `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
+| `npm run lint`    | Run ESLint               |
 
 ---
 
@@ -189,6 +197,7 @@ The project uses Tailwind CSS v4. You can customize:
 ### Tailwind Configuration
 
 The project uses Tailwind CSS v4 with the following features:
+
 - **Dark Mode**: Class-based dark mode switching
 - **Gradients**: Beautiful gradient backgrounds and text
 - **Animations**: Smooth transitions and hover effects
@@ -205,25 +214,28 @@ The project uses Tailwind CSS v4 with the following features:
 ## 🌟 Features in Detail
 
 ### Dark Mode Implementation
+
 ```jsx
 const [darkMode, setDarkMode] = useState(false);
 
 useEffect(() => {
   if (darkMode) {
-    document.documentElement.classList.add('dark');
+    document.documentElement.classList.add("dark");
   } else {
-    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.remove("dark");
   }
 }, [darkMode]);
 ```
 
 ### Responsive Design
+
 - Mobile-first approach
 - Flexible grid layouts
 - Touch-friendly interactions
 - Optimized for all screen sizes
 
 ### Accessibility
+
 - Keyboard navigation support
 - Screen reader friendly
 - Focus management
